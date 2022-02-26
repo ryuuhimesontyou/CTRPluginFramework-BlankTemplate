@@ -46,3 +46,38 @@ __c_bss_start:
 .section .__bss_end
 .global __c_bss_end
 __c_bss_end:
+//銅貨Max
+void BronzeCoinMax(MenuEntry *entry)
+{
+	offset = 0x00000000;
+	Process::Write32(offset + 0x0091196C , 0x0098967F);
+	
+}
+//木材Max
+void WoodMax(MenuEntry *entry)
+{
+	offset = 0x00000000;
+	Process::Write32(offset + 0x0091249C , 0x0098967F);
+	
+}
+//石材Max
+void StoneMax(MenuEntry *entry)
+{
+	offset = 0x00000000;
+	Process::Write32(offset + 0x009124A0 , 0x0098967F);
+	
+}
+//鉱石Max
+void OreMax(MenuEntry *entry)
+{
+	offset = 0x00000000;
+	Process::Write32(offset + 0x009124A4 , 0x0098967F);
+	
+}
+//食糧Max
+void FoodMax(MenuEntry *entry)
+{
+	offset = 0x00000000;
+	Process::Write32(offset + 0x00912498 , 0x0098967F);
+	
+}
